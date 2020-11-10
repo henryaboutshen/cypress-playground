@@ -1,3 +1,10 @@
 {
-    "testFiles": "**/*.{feature,features}"
+    "testFiles": "**/*.{feature,features}",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": false
+    }
 }
