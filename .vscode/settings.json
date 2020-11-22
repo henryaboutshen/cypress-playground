@@ -1,8 +1,8 @@
 {
     "cucumberautocomplete.steps": [
-        "src/*/cypress/support/step_definitions/*.js"
+        "src/baidu/cypress/support/step_definitions/*.js"
     ],
-    "cucumberautocomplete.syncfeatures": "src/*/cypress/integration/*.feature",
+    "cucumberautocomplete.syncfeatures": "src/baidu/cypress/integration/*.feature",
     "cucumberautocomplete.smartSnippets": true,
     "cucumberautocomplete.stepsInvariants": true
 }
