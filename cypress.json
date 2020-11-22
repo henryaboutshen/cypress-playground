@@ -1,4 +1,10 @@
 {
+    "env": {
+        "TAGS": "not @ignore"
+    },
+    "baseUrl": "https://baidu.com",
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
     "testFiles": "**/*.{feature,features}",
     "reporter": "mochawesome",
     "reporterOptions": {
