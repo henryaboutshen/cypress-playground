@@ -13,6 +13,7 @@ jobs:
       - uses: cypress-io/github-action@v2
         with:
           browser: chrome
+          project: ./src/baidu
       - uses: actions/upload-artifact@v1
         if: failure()
         with: 
