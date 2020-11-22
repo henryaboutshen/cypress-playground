@@ -4,10 +4,12 @@
   "description": "Cypress playground",
   "main": "index.js",
   "scripts": {
+    "cypress:run": "npm run cypress:run:baidu && npm run cypress:run:qq",
     "cypress:open:baidu": "cypress open --project ./src/baidu",
     "cypress:open:baidu:dev": "cypress open --project ./src/baidu --env NODE_ENV=dev",
     "cypress:run:baidu": "cypress run --project ./src/baidu",
-    "cypress:open:qq": "cypress open --project ./src/qq"
+    "cypress:open:qq": "cypress open --project ./src/qq",
+    "cypress:run:qq": "cypress run --project ./src/qq"
   },
   "repository": {
     "type": "git",
