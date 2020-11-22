@@ -1,5 +1,5 @@
 import { When } from "cypress-cucumber-preprocessor/steps";
 
-When(`I open baidu page`, () => {
+When(`I open home page`, () => {
     cy.visit('/')
 })
