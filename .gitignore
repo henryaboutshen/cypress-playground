@@ -1,4 +1,4 @@
 node_modules/
-cypress/screenshots/
-cypress/videos/
-cypress/results/
+src/*/cypress/screenshots/
+src/*/cypress/videos/
+src/*/cypress/results/
