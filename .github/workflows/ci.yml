@@ -17,14 +17,14 @@ jobs:
         if: failure()
         with: 
           name: cypress-screenshots
-          path: cypress/screenshots
+          path: src/baidu/cypress/screenshots
       - uses: actions/upload-artifact@v1
         if: always()
         with: 
           name: cypress-videos
-          path: cypress/videos
+          path: src/baidu/cypress/videos
       - uses: actions/upload-artifact@v1
         if: always()
         with: 
           name: cypress-results
-          path: cypress/results
+          path: src/baidu/cypress/results
