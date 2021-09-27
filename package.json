@@ -25,8 +25,8 @@
   },
   "homepage": "https://github.com/HenrySHENhr/cypress-playground#readme",
   "dependencies": {
-    "cypress": "^6.3.0",
-    "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress": "^8.4.1",
+    "cypress-cucumber-preprocessor": "^4.2.0",
     "mochawesome": "^6.2.1",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.1.0",
