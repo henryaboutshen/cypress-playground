@@ -2,7 +2,7 @@
     "env": {
         "TAGS": "not @ignore"
     },
-    "baseUrl": "https://m.baidu.com",
+    "baseUrl": "http://localhost:5500",
     "viewportWidth": 1920,
     "viewportHeight": 1080,
     "testFiles": "**/*.{feature,features}",

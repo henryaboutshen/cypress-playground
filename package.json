@@ -4,7 +4,7 @@
   "description": "Cypress playground",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src",
+    "lint": "eslint src/**/*.js --fix",
     "lint:create": "eslint --init",
     "cypress:open:zhaoliru": "cypress open --project ./src/zhaoliru",
     "cypress:open:zhaoliru:dev": "cypress open --project ./src/zhaoliru --env NODE_ENV=dev",
@@ -16,7 +16,8 @@
     "url": "git+https://github.com/HenrySHENhr/cypress-playground.git"
   },
   "keywords": [
-    "cypress"
+    "cypress",
+    "cucumber"
   ],
   "author": "Henry Shen",
   "license": "ISC",
