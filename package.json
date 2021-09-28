@@ -4,12 +4,12 @@
   "description": "Cypress playground",
   "main": "index.js",
   "scripts": {
-    "cypress:run": "npm run cypress:run:baidu && npm run cypress:run:qq",
-    "cypress:open:baidu": "cypress open --project ./src/baidu",
-    "cypress:open:baidu:dev": "cypress open --project ./src/baidu --env NODE_ENV=dev",
-    "cypress:run:baidu": "cypress run --project ./src/baidu",
-    "cypress:open:qq": "cypress open --project ./src/qq",
-    "cypress:run:qq": "cypress run --project ./src/qq"
+    "lint": "eslint src",
+    "lint:create": "eslint --init",
+    "cypress:open:zhaoliru": "cypress open --project ./src/zhaoliru",
+    "cypress:open:zhaoliru:dev": "cypress open --project ./src/zhaoliru --env NODE_ENV=dev",
+    "cypress:run:zhaoliru": "cypress run --project ./src/zhaoliru",
+    "cypress:run:zhaoliru:dev": "cypress run --project ./src/zhaoliru --env NODE_ENV=dev"
   },
   "repository": {
     "type": "git",
@@ -31,5 +31,11 @@
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.1.0",
     "xlsx": "^0.16.9"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "^2.24.2"
   }
 }
