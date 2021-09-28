@@ -9,7 +9,9 @@
     "cypress:open:zhaoliru": "cypress open --project ./src/zhaoliru",
     "cypress:open:zhaoliru:dev": "cypress open --project ./src/zhaoliru --env NODE_ENV=dev",
     "cypress:run:zhaoliru": "cypress run --project ./src/zhaoliru",
-    "cypress:run:zhaoliru:dev": "cypress run --project ./src/zhaoliru --env NODE_ENV=dev"
+    "cypress:run:zhaoliru:dev": "cypress run --project ./src/zhaoliru --env NODE_ENV=dev",
+    "cypress:report:zhaoliru": "mochawesome-merge ./src/zhaoliru/cypress/results/json/*.json > ./src/zhaoliru/cypress/results/index.json && marge -i -f index -o ./src/zhaoliru/cypress/results ./src/zhaoliru/cypress/results/index.json",
+    "cypress:clean": "rimraf ./src/*/cypress/results ./src/*/cypress/videos"
   },
   "repository": {
     "type": "git",
@@ -28,10 +30,10 @@
   "dependencies": {
     "cypress": "^8.4.1",
     "cypress-cucumber-preprocessor": "^4.2.0",
+    "fs-extra": "^10.0.0",
     "mochawesome": "^6.2.1",
     "mochawesome-merge": "^4.2.0",
-    "mochawesome-report-generator": "^5.1.0",
-    "xlsx": "^0.16.9"
+    "mochawesome-report-generator": "^5.1.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0",

@@ -2,15 +2,19 @@
     "env": {
         "TAGS": "not @ignore"
     },
+    "retries": {
+        "runMode": 2,
+        "openMode": 0
+    },
     "baseUrl": "http://localhost:5500",
     "viewportWidth": 1920,
     "viewportHeight": 1080,
     "testFiles": "**/*.{feature,features}",
     "reporter": "../../node_modules/mochawesome/src/mochawesome.js",
     "reporterOptions": {
-        "reportDir": "cypress/results",
+        "reportDir": "cypress/results/json",
         "overwrite": false,
-        "html": true,
-        "json": false
+        "html": false,
+        "json": true
     }
 }
