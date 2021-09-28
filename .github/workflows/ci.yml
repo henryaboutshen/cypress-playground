@@ -6,25 +6,20 @@ on:
     branches: [ main ]
   workflow_dispatch:
 jobs:
-  build:
+  cypress:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: cypress-io/github-action@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
         with:
-          project: ./src/baidu
-      - uses: actions/upload-artifact@v1
+          project: ./src/zhaoliru
+      - name: Generate report
+        run: npm run cypress:report:zhaoliru
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1
         if: failure()
         with: 
           name: cypress-screenshots
           path: src/baidu/cypress/screenshots
-      - uses: actions/upload-artifact@v1
-        if: always()
-        with: 
-          name: cypress-videos
-          path: src/baidu/cypress/videos
-      - uses: actions/upload-artifact@v1
-        if: always()
-        with: 
-          name: cypress-results
-          path: src/baidu/cypress/results

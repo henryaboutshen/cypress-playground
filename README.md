@@ -15,5 +15,5 @@ $ npm install
 The `npm run` command allows you to specify a script to be run.
 
 ```console
-$ npm run cypress:run
+$ npm run cypress:run:zhaoliru
 ```
