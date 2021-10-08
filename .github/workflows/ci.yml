@@ -19,7 +19,7 @@ jobs:
         if: always()
         run: npm run cypress:report:zhaoliru
       - name: Upload artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         if: failure()
         with: 
           name: cypress-screenshots
