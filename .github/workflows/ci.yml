@@ -16,6 +16,7 @@ jobs:
         with:
           project: ./src/zhaoliru
       - name: Generate report
+        if: always()
         run: npm run cypress:report:zhaoliru
       - name: Upload artifact
         uses: actions/upload-artifact@v1
