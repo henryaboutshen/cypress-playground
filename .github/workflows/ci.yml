@@ -22,4 +22,6 @@ jobs:
         if: failure()
         with: 
           name: cypress-screenshots
-          path: src/baidu/cypress/screenshots
+          path: |
+            src/zhaoliru/cypress/results
+            src/zhaoliru/cypress/screenshots
