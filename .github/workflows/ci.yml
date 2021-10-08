@@ -23,5 +23,5 @@ jobs:
         with: 
           name: cypress-screenshots
           path: |
-            src/zhaoliru/cypress/results
-            src/zhaoliru/cypress/screenshots
+            src/zhaoliru/cypress/results/
+            src/zhaoliru/cypress/screenshots/
