@@ -3,13 +3,14 @@
         "TAGS": "not @ignore"
     },
     "retries": {
-        "runMode": 2,
+        "runMode": 0,
         "openMode": 0
     },
     "baseUrl": "http://localhost:5500",
     "viewportWidth": 1920,
     "viewportHeight": 1080,
     "testFiles": "**/*.{feature,features}",
+    "screenshotsFolder": "cypress/screenshots",
     "reporter": "../../node_modules/mochawesome/src/mochawesome.js",
     "reporterOptions": {
         "reportDir": "cypress/results/json",
