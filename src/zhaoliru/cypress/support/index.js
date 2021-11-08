@@ -10,7 +10,7 @@ Cypress.on('test:after:run', (test, runnable) => {
             item = item.parent;
         }
         const fullTestName = nameParts.filter(Boolean).join(' -- ');
-        const imageUrl = `../screenshots/${Cypress.spec.name}/${fullTestName} (failed).png`;
+        const imageUrl = encodeURI(`../screenshots/${Cypress.spec.name}/${fullTestName} (failed).png`).replace('#', '%23');
         addContext({ test }, imageUrl);
     }
 });
